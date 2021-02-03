@@ -1,0 +1,138 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.inicio p{
+    white-space: pre-wrap;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.inicio h1 ,
+.inicio p{
+    margin: 0 2rem;
+    color: #fff;
+    z-index: 10;
+}
+
+.inicio{
+    padding: 2rem;
+    background-image: url("imagenes/paper-3213924_1920.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 30rem;
+    position: relative;
+    height: 90vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.inicio::after{
+    content:'';
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    pointer-events: none;
+    
+}
+
+.consultaImg{
+    width: 400px;
+}
+
+
+
+.consultaContenido{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+    /*border-bottom: solid 1px black;*/
+    padding: 2rem ;
+    box-shadow: 0 3px 30px rgb(189, 186, 186);
+}
+
+.consultaContenido div{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.consultoria h2{
+    text-align: center;
+}
+
+h1::first-letter{
+    color: rgb(216, 18, 18);
+}
+
+.resaltadoVerde{
+    color: rgb(121, 197, 121);
+}
+
+.consultoria{
+    
+    margin-top: 5rem;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.card{
+    margin: 0 2rem;
+}
+
+.capacitación{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footerPage{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    color: white;
+}
+
+.contacto{
+   padding: 4px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+@media screen and (max-width : 930px)
+{
+    .inicio{
+        flex-wrap: wrap;
+    }
+
+    .consultaContenido{
+        flex-wrap: wrap;
+    }
+
+    .inicio{
+        width: 100%;
+        height: 60%;
+        padding: 0;
+    }
+
+    .consultaImg{
+        width: 300px;
+    }
+    
+}
